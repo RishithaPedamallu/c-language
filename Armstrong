@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int m,n,r,digits=0,sum=0;
+	printf("enter n value");
+	scanf("%d",&n);
+	m=n;
+	while(n!=0)
+	{
+		digits++;
+		n=n/10;
+	}	
+	n=m;
+	while(n!=0)
+	{
+		r=n%10;
+		sum=sum+pow(r,digits);
+		n=n/10;
+	}
+	if(m==sum)
+	printf("armstorng");
+	else
+	printf("not armstrong");
+	return 0;
+}
