@@ -1,0 +1,15 @@
+#include<stdio.h>
+struct student
+{
+	char name[15];
+	int rno;
+	char gender;
+};
+int main()
+{
+	struct student s1={"srinu",143,'m'},s2;
+	s2=s1;
+	printf("student s1:%s %d %c\n",s1.name,s1.rno,s1.gender);
+	printf("student s2:%s %d %c",s2.name,s2.rno,s2.gender);
+	return 0;
+}
