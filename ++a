@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int a=15,b;
+	b=++a;
+printf("%d\n%d",b,a);
+	getch();
+	return 0;
+}
